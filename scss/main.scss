@@ -7,12 +7,12 @@
 @import './components/header';
 @import './components/hero-section';
 @import './components/links';
-@import './components/section-title';
-@import './components/about-us-section';
-@import './components/why-us-section';
-@import './components/-our-procedures-section.scss';
+@import './components/advantages-section';
+@import './components/traditions-section';
+@import './components/chefs-section';
+@import './components/formats-section';
 @import './components/carousel';
-@import './components/contacts-section';
+@import './components/contact-section';
 @import './components/footer';
 @import './components/modal';
 @import './components/form';
@@ -21,20 +21,30 @@
 @import './utils/section';
 @import './utils/container';
 
-/* section title*/
+/* .checkbox {
+    position: relative;
+}
 
-/* about-us-section */
+.checkbox-input {
+    appearance: none;
+}
 
-/* why-us-section */
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: var(--color-secondary-dark);
+}
 
-/* Our procedures section */
+.checkbox-label {
+    padding: 24px;
+}
 
-/* Carousel */
-
-/* contacts-section */
-
-/* Footer */
-
-/* Modal */
-
-/* Form */
+.checkbox-label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 2px;
+    content: '';
+} */
