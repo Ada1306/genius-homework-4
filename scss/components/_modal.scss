@@ -9,7 +9,7 @@
   justify-content: center;
   padding: 20px 0;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3, visibility 0.3;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .backdrop.is-hidden {
@@ -20,18 +20,37 @@
 
 .modal {
   position: relative;
+  text-align: center;
   width: 100%;
-  max-width: 880px;
+  max-width: 723px;
   height: 100%;
-  max-height: 880px;
-  padding: 128px;
-  background-color: var(--color-primary-light);
-  border-radius: 32px;
+  max-height: 681px;
+  padding: 42px 144px 42px 144px;
+  background-color: var(--color-brand-dark);
+  border-radius: 48px;
   overflow-y: auto;
+  color: var(--color-primary-light);
+  background-image: url(../images/modal-background.png);
 }
 
 .modal-btn-close {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 42px;
+  right: 42px;
+  background-image: url(/images/button-icon.png);
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-text {
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74px;
+  text-align: center;
+  margin-bottom: 40px;
 }
