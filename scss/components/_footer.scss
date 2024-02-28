@@ -1,0 +1,80 @@
+.footer {
+  padding: 56px 0;
+  position: relative;
+  background-color: var(--color-brand-dark);
+  background-image: url('../images/footer-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::after {
+  position: absolute;
+  width: 278px;
+  height: 150px;
+  bottom: 0;
+  right: 0;
+  background-image: url('../images/pexels.png');
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  transition: color 0.2s;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.address-link {
+  color: var(--color-primary-light);
+  padding-bottom: 16px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-icons {
+  fill: var(--color-primary-light);
+}
+
+.address-icons:hover {
+  fill: var(--color-brand-light);
+}
+
+.address-copyright {
+  color: var(--color-secondary-dark);
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 24px;
+}

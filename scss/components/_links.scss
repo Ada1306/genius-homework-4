@@ -1,0 +1,20 @@
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 16px;
+  line-height: 1.17;
+  padding-bottom: 16px;
+  gap: 16px;
+}
+
+.link:hover,
+.link-header:hover {
+  color: var(--color-brand-light);
+}
+
+.link-header {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
