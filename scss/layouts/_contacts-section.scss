@@ -1,0 +1,51 @@
+.contact-section {
+  padding-bottom: 96px;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    gap: 32px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
+
+  &__map {
+    flex: 50%;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: none;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.17;
+  }
+
+  &__form {
+    text-align: center;
+    width: 100%;
+    max-width: 423px;
+    height: 100%;
+    max-height: 481px;
+    padding: 48px 56px;
+    background-color: var(--color-brand-dark);
+    border-radius: 32px;
+    overflow-y: auto;
+    color: var(--color-primary-light);
+    background-image: url(../images/modal-background.png);
+  }
+}

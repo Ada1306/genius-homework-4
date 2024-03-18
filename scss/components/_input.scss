@@ -1,34 +1,39 @@
 .input {
   position: relative;
+  width: 310px;
+  margin: 0 auto 24px;
+  gap: 32px;
 
   &__label {
     position: absolute;
-    top: 16px;
-    left: 42px;
+    top: 18px;
+    left: 32px;
   }
 
   &__control {
-    padding: 16px 42px;
+    padding: 18px 32px;
     width: 100%;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.17;
-    border: 1px solid var(--color-secondary-dark);
-    border-radius: 8px;
+    border: 2px solid var(--color-quaternary-dark);
+    border-radius: 32px;
     background-color: transparent;
+    color: var(--color-primary-light);
 
     &:focus {
-      border-color: var(--color-brand-normal);
+      background-color: var(--color-quaternary-dark);
+      border-color: var(--color-quaternary-dark);
       outline: none;
     }
 
     &::placeholder {
-      color: var(--color-secondary-dark);
-      font-size: 16px;
+      color: var(--color-primary-light);
+      font-size: 13px;
       line-height: 1.17;
     }
 
     &:focus:placeholder {
-      color: var(--color-primary-dark);
+      color: var(--color-primary-light);
     }
   }
 }

@@ -1,54 +1,45 @@
 @import './utils/fonts';
-@import './utils/variables';
+@import './utils/mixins';
 @import './base';
 @import './utils/texts';
 @import './utils/utils';
-@import './utils/mixins';
+@import './utils/variables';
 
 @import './components/buttons';
-@import './components/carousel-button';
-@import './components/chef-card';
-@import './components/format-card';
+@import './components/carousel';
 @import './components/input';
 @import './components/links';
+@import './components/our-procedures-card';
+@import './components/universal-background';
+@import './components/why-us-card';
 
-@import './layouts/advantages-section';
-@import './layouts/chefs-section';
-@import './layouts/contact-section';
+@import './layouts/about-us-section';
+@import './layouts/contacts-section';
 @import './layouts/container';
 @import './layouts/footer';
-@import './layouts/formats-section';
 @import './layouts/form-terms';
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/modal';
+@import './layouts/our-procedures-section';
+@import './layouts/section-title';
 @import './layouts/section';
-@import './layouts/traditions-section';
+@import './layouts/why-us-section';
 
-/* .checkbox {
-    position: relative;
-}
+/* section title*/
 
-.checkbox-input {
-    appearance: none;
-}
+/* about-us-section */
 
-.checkbox-input:checked + .checkbox-label::before {
-    background-color: var(--color-secondary-dark);
-}
+/* why-us-section */
 
-.checkbox-label {
-    padding: 24px;
-}
+/* Our procedures section */
 
-.checkbox-label::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    margin-top: 5px;
-    border: 1px solid var(--color-primary-dark);
-    border-radius: 2px;
-    content: '';
-} */
+/* Carousel */
+
+/* contacts-section */
+
+/* Footer */
+
+/* Modal */
+
+/* Form */

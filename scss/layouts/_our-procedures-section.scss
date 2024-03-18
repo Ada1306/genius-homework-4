@@ -1,0 +1,21 @@
+.our-procedures-section {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    gap: 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}

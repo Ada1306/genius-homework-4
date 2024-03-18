@@ -1,0 +1,33 @@
+.why-us-section {
+  padding-top: 88px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    max-width: 445px;
+    margin: 0 auto 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+  }
+
+  &__item {
+    flex-basis: auto;
+  }
+}

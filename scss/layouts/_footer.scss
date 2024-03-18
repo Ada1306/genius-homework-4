@@ -1,37 +1,29 @@
 .footer {
-  padding: 32px 0;
+  padding: 56px 0;
   position: relative;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-brand-dark);
   background-image: url('../images/footer-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.footer::before,
 .footer::after {
   position: absolute;
+  width: 278px;
+  height: 150px;
   bottom: 0;
+  right: 0;
+  background-image: url('../images/pexels.png');
   background-repeat: no-repeat;
   content: '';
 }
 
-.footer::before {
-  width: 180px;
-  height: 120px;
-  left: 0;
-  background-image: url('../images/decor-nread-small.png');
-}
-
-.footer::after {
-  width: 380px;
-  height: 190px;
-  right: 0;
-  background-image: url('../images/decor-bred-large.png');
-}
-
 .footer-container {
   display: flex;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
   gap: 20px;
 }
 
@@ -39,38 +31,50 @@
 .footer-address {
   display: flex;
   flex-basis: 50%;
+  transition: color 0.2s;
   gap: 20px;
 }
 
 .footer-logo,
 .footer-menu {
   flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.17;
 }
 
 .address-list,
 .address-info {
   flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.17;
 }
 
 .address-link {
   color: var(--color-primary-light);
-  font-size: 16px;
-  font-weight: 300;
+  padding-bottom: 16px;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .address-link:hover {
-  color: var(--color-brand-normal);
+  color: var(--color-brand-light);
 }
 
-.address-icon {
+.address-icons {
   fill: var(--color-primary-light);
 }
 
-.address-icon:hover {
-  fill: var(--color-brand-normal);
+.address-icons:hover {
+  fill: var(--color-brand-light);
 }
 
 .address-copyright {
-  font-size: 14px;
+  color: var(--color-secondary-dark);
+  font-size: 13px;
+  line-height: 1.17;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 24px;
 }
