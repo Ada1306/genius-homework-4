@@ -12,6 +12,10 @@ body {
     font-weight: 400;
     line-height: 1.17;
     margin: 0;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 22px;
+        }
 }
 
 h1,
@@ -22,7 +26,15 @@ h5,
 h6,
 p {
     margin-top: 0;
+    // margin-bottom: 0;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
 a {
     display: inline-block;

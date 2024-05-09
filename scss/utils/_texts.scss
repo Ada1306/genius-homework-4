@@ -3,5 +3,9 @@
 }
 
 .text-bold {
-  font-weight: 600;
+  font-weight: 700;
+
+    @media screen and (min-width: 1280px) {
+    font-weight: 600;
+    }
 }

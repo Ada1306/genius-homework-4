@@ -4,7 +4,7 @@
   justify-content: flex-end;
   position: relative;
   height: 456px;
-  width: 344px;
+  // width: 344px;
   padding: 372px 77px 32px 115px;
   //   text-align: center;
   //   background-repeat: no-repeat;
@@ -16,11 +16,12 @@
     var(--color-brand-dark) 101.39%
   );
   border-radius: 4px 120px 4px 120px; /* maybe to remove */
-  transition: transform 0.3s;
+  // transition: transform 0.3s;
+  overflow: hidden;
 
-  &:hover {
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 
   &__image {
     position: absolute;
@@ -33,6 +34,8 @@
 
   &__text {
     color: var(--color-primary-light);
+    width: 152px;
+    height: 52px;
     text-align: center;
     font-size: 22px;
     line-height: 1.18;

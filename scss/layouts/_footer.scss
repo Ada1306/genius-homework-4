@@ -6,9 +6,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.footer::after {
+  
+&::after {
   position: absolute;
   width: 278px;
   height: 150px;
@@ -19,62 +18,85 @@
   content: '';
 }
 
-.footer-container {
+&__container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
   gap: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }
 
-.footer-nav,
-.footer-address {
+&__nav,
+&__address {
   display: flex;
+  text-align: center;
+  flex-direction: column;
   flex-basis: 50%;
   transition: color 0.2s;
   gap: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: left;
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }
 
-.footer-logo,
-.footer-menu {
+&__logo,
+&__menu {
   flex-grow: 1;
   font-size: 16px;
   line-height: 1.17;
 }
 
-.address-list,
-.address-info {
+
+&__icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  transition: color 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    justify-content: flex-start;
+  }
+}
+
+
+&__address-list,
+&__address-info {
   flex-grow: 1;
   font-size: 16px;
   line-height: 1.17;
 }
 
-.address-link {
+&__address-link {
   color: var(--color-primary-light);
   padding-bottom: 16px;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.address-link:hover {
+&__address-link:hover {
   color: var(--color-brand-light);
 }
 
-.address-icons {
+&__address-icons {
   fill: var(--color-primary-light);
 }
 
-.address-icons:hover {
+&__address-icons:hover {
   fill: var(--color-brand-light);
 }
 
-.address-copyright {
+&__address-copyright {
   color: var(--color-secondary-dark);
   font-size: 13px;
   line-height: 1.17;
 }
-
-.footer-icons {
-  display: flex;
-  gap: 24px;
 }
