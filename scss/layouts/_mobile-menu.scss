@@ -44,6 +44,7 @@
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;
+    transition: color 0.2s;
 
     &:hover {
       color: var(--color-brand-light);
@@ -52,8 +53,14 @@
   }
 
   &__contacts {
+    fill: var(--color-brand-dark);
     display: flex;
     margin-top: 16px;
     gap: 16px;
+    transition: color 0.2s;
+
+   &:hover {
+      fill: var(--color-brand-light);
+    }
   }
 }

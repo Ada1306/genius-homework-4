@@ -991,6 +991,7 @@ width: 100%;
   display: flex;
   margin-top: 16px;
   gap: 16px;
+  transition: color 0.2s;
 }
 
 .mobile-menu__contacts:hover {
