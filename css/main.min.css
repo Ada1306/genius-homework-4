@@ -791,8 +791,8 @@ width: 100%;
   background-color: transparent;
   border: none;
   fill: var(--color-primary-light);
-  position: relative;
-  z-index: 3;
+  /* position: relative;
+  z-index: 3; */
 
   @media screen and (min-width:  768px) {
     display: none;
@@ -978,17 +978,23 @@ width: 100%;
   font-size: 14px;
   line-height: 1.17;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
-.mobile-menu:hover {
+.mobile-menu__link:hover {
   color: var(--color-brand-light);
   font-weight: 700;
 }
 
 .mobile-menu__contacts {
+  fill: var(--color-brand-dark);
   display: flex;
   margin-top: 16px;
   gap: 16px;
+}
+
+.mobile-menu__contacts:hover {
+  fill: var(--color-brand-light);
 }
 
 
